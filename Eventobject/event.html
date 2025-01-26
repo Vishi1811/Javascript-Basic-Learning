@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Remove default padding and margin from the ul */
+        ul#Image {
+            display: flex; /* Display items in one line */
+            gap: 15px; /* Spacing between images */
+            padding: 0;
+            margin: 0;
+            justify-content: center; /* Center align */
+        }
+
+        /* Style for list items */
+        ul#Image li {
+            list-style: none; /* Remove bullet points */
+            background-color: lightgray; /* Background color */
+            border: 2px solid black; /* Border */
+            padding: 5px;
+        }
+
+        /* Style for images */
+        ul#Image li img {
+            width: 150px; /* Fixed width */
+            height: 150px; /* Fixed height */
+            object-fit: cover; /* Ensure proper scaling */
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <li id="img1"><img src="nataure1.jpeg" alt=""></li>
-        <li id="img2"><img src="nature2.jpg" alt=""></li>
-        <li id="img3"><img src="gfg.png" alt=""></li>
-        <li id="img4"><img src="leetcode.png" alt=""></li>
-    </div>
+    <ul id="Image">
+        <li id="img"><img src="nataure1.jpeg" alt="Nature 1"></li>
+        <li id="img"><img src="nature2.jpg" alt="Nature 2"></li>
+        <li id="img"><img src="gfg.png" alt="GFG"></li>
+        <li id="img"><img src="leetcode.png" alt="LeetCode"></li>
+    </ul>
+    <script src="event.js"></script>
     
 </body>
 </html>
