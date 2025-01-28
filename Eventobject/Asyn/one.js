@@ -4,3 +4,9 @@
 setTimeout(function() {
     console.log("Vishal")
 }, 2000);
+// passing referance
+let fun=function()
+{
+    console.log("hello,in this scenario ,reference is passed");
+}
+setTimeout(fun,2000);
