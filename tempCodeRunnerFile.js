@@ -1,4 +1,4 @@
-const user={
+// const user={
 //     username:"Vishal",
 //     age:"23",
 //     welcomeMassaged:function()
