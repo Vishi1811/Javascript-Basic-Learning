@@ -1,2 +1,2 @@
-# Javascript Learingi
+# Javascript 
 A code repo for javascript 
