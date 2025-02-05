@@ -13,7 +13,7 @@ const response=fetch('https://api.github.com/users/hiteshchoudhary')
     const img=document.createElement('img');
 
     h.textContent="Chai aur Code";
-    h.style.color="black"
+    h.style.color="blue"
 
     img.src = data.avatar_url;  // Set image source
     img.alt = "Hitesh Image"; // Set alt text
