@@ -17,7 +17,7 @@ const response=fetch('https://api.github.com/users/hiteshchoudhary')
 
     img.src = data.avatar_url;  // Set image source
     img.alt = "Hitesh Image"; // Set alt text
-    img.style.border = "2px solid red";  // Correct border
+    img.style.border = "2px solid #A30052";  // Correct border
     img.style.borderRadius = "5px";
     img.style.width = "250px";  // Optional styling
     img.style.height = "250px";
@@ -25,7 +25,7 @@ const response=fetch('https://api.github.com/users/hiteshchoudhary')
     const NoOfFollowers=data.followers;
     const h2=document.createElement("h2");
     h2.textContent = `Followers: ${NoOfFollowers}`;
-    h2.style.color="red"
+    h2.style.color="#A30052"
    
     div.appendChild(h);
     div.appendChild(img);
@@ -36,7 +36,7 @@ const response=fetch('https://api.github.com/users/hiteshchoudhary')
 .catch((error)=>
 {
     const errorDiv = document.createElement("div");
-    errorDiv.style.color = "red";
+    errorDiv.style.color = "blue";
     errorDiv.style.fontSize = "20px";
     errorDiv.style.textAlign = "center";
     errorDiv.style.marginTop = "20px";
